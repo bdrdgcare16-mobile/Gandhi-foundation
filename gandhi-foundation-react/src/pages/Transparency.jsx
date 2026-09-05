@@ -1,0 +1,5 @@
+import { ExternalLink } from 'lucide-react';import PageHero from '../components/PageHero';import {documents} from '../content';
+export default function Transparency()
+{return <><PageHero image="/assets/transparency-hero.jpg" eyebrow="Governance & Transparency" title="Trust is built through responsible documentation." text="Selected charitable registration, annual-report and financial-reporting records from the Foundation archive."/><section className="section section-soft"><div className="container"><div className="doc-grid">{documents.map(([type,title,href])=><a className="doc-card" href={href} target="_blank" rel="noreferrer" key={href}><span>{type}</span>
+<strong>{title}</strong><small>View document <ExternalLink size={13}/></small></a>)}</div>
+<div className="privacy-note"><strong>Privacy note:</strong> Personal identity documents from the source archive are intentionally not published on this website.</div></div></section></>}

@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment / secrets — never commit these
+.env
+.env.local
+.env.*.local
+
+# Submitted enquiries (contains people's names, emails and phone numbers)
+server/data/enquiries.json
+
+# Logs
+npm-debug.log*
+yarn-error.log*
+*.log
+
+# Editor / OS clutter
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

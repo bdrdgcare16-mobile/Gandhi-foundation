@@ -1,0 +1,2 @@
+import PageHero from '../components/PageHero';import ProgramsGrid from '../components/ProgramsGrid';
+export default function Programs(){return <><PageHero image="/assets/programs-hero.jpg" eyebrow="Our Programs" title="Practical programs built around community priorities." text="From women’s leadership and education to health, skills and village development, our work addresses interconnected needs."/><section className="section section-soft"><div className="container"><ProgramsGrid/></div></section></>}
