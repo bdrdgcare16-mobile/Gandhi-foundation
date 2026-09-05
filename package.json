@@ -1,0 +1,12 @@
+{
+  "name": "gandhi-foundation",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Gandhi Foundation website — React frontend served by an Express API",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "postinstall": "npm install --prefix gandhi-foundation-react && npm install --prefix server",
+    "build": "npm run build --prefix gandhi-foundation-react",
+    "start": "node server/src/server.js"
+  }
+}
