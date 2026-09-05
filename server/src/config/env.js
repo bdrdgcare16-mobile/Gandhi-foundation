@@ -19,6 +19,17 @@ export const env = {
   serveClient: bool(process.env.SERVE_CLIENT, false),
   clientDir: process.env.CLIENT_DIR || '../gandhi-foundation-react/dist',
 
+  db: {
+    // Railway's MySQL plugin provides MYSQL_URL. DATABASE_URL is accepted too
+    // so the same code runs on other hosts without changes.
+    url: process.env.MYSQL_URL || process.env.DATABASE_URL || '',
+    host: process.env.MYSQLHOST || process.env.DB_HOST || '',
+    port: Number(process.env.MYSQLPORT || process.env.DB_PORT || 3306),
+    user: process.env.MYSQLUSER || process.env.DB_USER || '',
+    password: process.env.MYSQLPASSWORD || process.env.DB_PASSWORD || '',
+    database: process.env.MYSQLDATABASE || process.env.DB_NAME || '',
+  },
+
   mail: {
     // Without SMTP_HOST the app still accepts enquiries — it stores them
     // instead of emailing, so the form never fails because mail is misconfigured.
