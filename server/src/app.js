@@ -25,19 +25,26 @@ export function createApp() {
   app.use(compression());
   app.use(morgan(env.nodeEnv === 'production' ? 'combined' : 'dev'));
 
-  app.use(cors({
-    origin(origin, callback) {
-      // No origin: curl, server-to-server, same-origin form posts.
-      if (!origin || env.corsOrigins.includes(origin)) return callback(null, true);
-      callback(new Error(`Origin ${origin} is not allowed by CORS.`));
-    },
-  }));
-
   // 100kb is far more than the contact form needs and blocks oversized posts.
   app.use(express.json({ limit: '100kb' }));
   app.use(express.urlencoded({ extended: true, limit: '100kb' }));
 
-  app.use('/api', apiRoutes);
+  // CORS applies to the API only. Static files must never go through it:
+  // when the client is served from this same process the browser sends an
+  // Origin header for stylesheets and scripts, and running them through CORS
+  // would block the site's own assets.
+  const corsMiddleware = cors({
+    origin(origin, callback) {
+      // No origin: curl, server-to-server, same-origin requests.
+      if (!origin || env.corsOrigins.includes(origin)) return callback(null, true);
+      // Refuse by withholding the headers rather than raising an error.
+      // Throwing here turns a routine cross-origin request into a 500, and
+      // same-origin callers (which need no CORS headers) still work fine.
+      callback(null, false);
+    },
+  });
+
+  app.use('/api', corsMiddleware, apiRoutes);
 
   if (env.serveClient) {
     const dist = resolve(here, '..', env.clientDir);
