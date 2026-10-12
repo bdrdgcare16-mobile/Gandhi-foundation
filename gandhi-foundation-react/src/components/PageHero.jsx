@@ -1,8 +1,8 @@
-export default function PageHero({ eyebrow, title, text, image }) {
+export default function PageHero({ eyebrow, title, text, image, position }) {
   return (
     <section
       className={image ? 'page-hero has-image' : 'page-hero'}
-      style={image ? { backgroundImage: `url(${image})` } : undefined}
+      style={image ? { backgroundImage: `url(${image})`, ...(position && { backgroundPosition: position }) } : undefined}
     >
       <div className="container">
         <div className="narrow">
