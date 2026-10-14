@@ -35,3 +35,7 @@ export const gallery = [
   ['/assets/community-session.jpg', 'Community', 'Participation and local action'],
   ['/assets/health-camp.jpg', 'Wellbeing', 'Community health initiatives'],
 ];
+// Photos shown in the lightbox when the Education gallery tile is opened.
+export const educationPhotos = [
+  ['/assets/education-workshop.jpg', 'Learning and community participation'],
+];
