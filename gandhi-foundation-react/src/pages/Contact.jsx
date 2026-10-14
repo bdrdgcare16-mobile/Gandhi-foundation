@@ -90,7 +90,7 @@ export default function Contact() {
   const err = key => fieldErrors[key] && <small className="field-error">{fieldErrors[key]}</small>;
 
   return <>
-    <PageHero image="/assets/contact-hero.jpg" eyebrow="Contact & Partnerships" title="Start a conversation with Gandhi Foundation." text="For CSR collaboration, volunteering, institutional support, program partnerships or general enquiries."/>
+    <PageHero image="/assets/contact-hero.jpg" position="center center" eyebrow="Contact & Partnerships" title="Start a conversation with Gandhi Foundation." text="For CSR collaboration, volunteering, institutional support, program partnerships or general enquiries."/>
     <section className="section"><div className="container contact-grid">
       <div className="section-heading">
         <span className="eyebrow">Connect</span>
