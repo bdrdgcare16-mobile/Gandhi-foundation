@@ -35,7 +35,14 @@ export const gallery = [
   ['/assets/community-session.jpg', 'Community', 'Participation and local action'],
   ['/assets/health-camp.jpg', 'Wellbeing', 'Community health initiatives'],
 ];
-// Photos shown in the lightbox when the Education gallery tile is opened.
-export const educationPhotos = [
-  ['/assets/education-workshop.jpg', 'Learning and community participation'],
-];
+// Photo sets shown in the lightbox when a gallery tile is opened.
+// Keyed by the tile's tag; tiles without an entry stay static.
+export const galleryPhotos = {
+  Education: [
+    ['/assets/education-workshop.jpg', 'Learning and community participation'],
+  ],
+  Women: [
+    ['/assets/women-1.jpg', 'Awareness session with women participants'],
+    ['/assets/women-2.jpg', 'Hands-on skills training'],
+  ],
+};
