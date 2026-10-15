@@ -45,4 +45,10 @@ export const galleryPhotos = {
     ['/assets/women-1.jpg', 'Awareness session with women participants'],
     ['/assets/women-2.jpg', 'Hands-on skills training'],
   ],
+  Health: [
+    ['/assets/health-1.jpg', 'Pulse polio booth at the municipality'],
+    ['/assets/health-2.jpg', 'Polio immunisation camp'],
+    ['/assets/health-3.jpg', 'Leprosy awareness rally'],
+    ['/assets/health-4.jpg', 'Community health awareness session'],
+  ],
 };
