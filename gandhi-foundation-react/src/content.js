@@ -57,4 +57,9 @@ export const galleryPhotos = {
     ['/assets/medical-3.jpg', 'Nursing students on camp duty'],
     ['/assets/medical-4.jpg', 'Candlelight awareness ceremony'],
   ],
+  Community: [
+    ['/assets/community-1.jpg', 'Handover ceremony at the Foundation office'],
+    ['/assets/community-2.jpg', 'Classroom session in progress'],
+    ['/assets/community-3.jpg', 'Students felicitating a guest'],
+  ],
 };
