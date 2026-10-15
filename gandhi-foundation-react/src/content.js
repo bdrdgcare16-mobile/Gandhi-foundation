@@ -51,4 +51,10 @@ export const galleryPhotos = {
     ['/assets/health-3.jpg', 'Leprosy awareness rally'],
     ['/assets/health-4.jpg', 'Community health awareness session'],
   ],
+  'Medical Camp': [
+    ['/assets/medical-1.jpg', 'Leprosy awareness march'],
+    ['/assets/medical-2.jpg', 'Outreach at Siva Shakthi Hospital'],
+    ['/assets/medical-3.jpg', 'Nursing students on camp duty'],
+    ['/assets/medical-4.jpg', 'Candlelight awareness ceremony'],
+  ],
 };
