@@ -62,4 +62,7 @@ export const galleryPhotos = {
     ['/assets/community-2.jpg', 'Classroom session in progress'],
     ['/assets/community-3.jpg', 'Students felicitating a guest'],
   ],
+  Wellbeing: [
+    ['/assets/health-camp.jpg', 'Community health initiatives'],
+  ],
 };
