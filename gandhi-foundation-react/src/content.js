@@ -63,6 +63,9 @@ export const galleryPhotos = {
     ['/assets/community-3.jpg', 'Students felicitating a guest'],
   ],
   Wellbeing: [
-    ['/assets/health-camp.jpg', 'Community health initiatives'],
+    ['/assets/wellbeing-1.jpg', 'Students with their tutor'],
+    ['/assets/wellbeing-2.jpg', 'Community event with local officers'],
+    ['/assets/wellbeing-3.jpg', 'Visit to the Government Hospital'],
+    ['/assets/wellbeing-4.jpg', 'Certificate presentation'],
   ],
 };
