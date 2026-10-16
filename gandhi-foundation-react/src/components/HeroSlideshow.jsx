@@ -4,6 +4,9 @@ const slides = [
   '/assets/hero-1.jpg',
   '/assets/hero-2.jpg',
   '/assets/hero-3.jpg',
+  '/assets/hero-4.jpg',
+  '/assets/hero-5.jpg',
+  '/assets/hero-6.jpg',
 ];
 
 export default function HeroSlideshow() {
