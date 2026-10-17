@@ -39,7 +39,11 @@ export const gallery = [
 // Keyed by the tile's tag; tiles without an entry stay static.
 export const galleryPhotos = {
   Education: [
-    ['/assets/education-workshop.jpg', 'Learning and community participation'],
+    ['/assets/education-1.jpg', 'Students at written work'],
+    ['/assets/education-2.jpg', 'Health promotion class in progress'],
+    ['/assets/education-3.jpg', 'Child health nursing lesson'],
+    ['/assets/education-4.jpg', 'Classroom teaching session'],
+    ['/assets/education-5.jpg', 'Nursing students in class'],
   ],
   Women: [
     ['/assets/women-1.jpg', 'Leprosy awareness campaign banner'],
