@@ -42,8 +42,11 @@ export const galleryPhotos = {
     ['/assets/education-workshop.jpg', 'Learning and community participation'],
   ],
   Women: [
-    ['/assets/women-1.jpg', 'Awareness session with women participants'],
-    ['/assets/women-2.jpg', 'Hands-on skills training'],
+    ['/assets/women-1.jpg', 'Leprosy awareness campaign banner'],
+    ['/assets/women-2.jpg', 'Awareness march through the town'],
+    ['/assets/women-3.jpg', 'Equipment demonstration for participants'],
+    ['/assets/women-4.jpg', 'Awareness session with women participants'],
+    ['/assets/women-5.jpg', 'Hands-on skills training'],
   ],
   Health: [
     ['/assets/health-1.jpg', 'Pulse polio booth at the municipality'],
